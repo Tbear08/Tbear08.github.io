@@ -1,0 +1,134 @@
+<html class="background">
+<head>
+ <style>
+ .background{
+background-color:rgb(200, 200, 255);
+ }
+ #border{
+width:33%;
+border:7px ridge crimson;
+border-radius:10px;
+ }
+.navy {
+color:rgb(0,0,100);
+font-size:20px;
+}
+.fancywritting{
+width:400px;
+word-wrap:break-word;
+}
+.blue {
+color:rgb(0,0,255);
+font-size:40px;
+}
+.red{
+color:rgb(255,0,0);
+}
+.purple{
+color:rgb(150,0,255);
+}
+.green{
+color:0,200,1;
+}
+#btn {
+width:110px;
+height:60px;
+border-radius:10px;
+background-color:black;
+color:white;
+}
+</style>
+<title>Zander Productions - Objects - Revan's Helmets</title>
+<h1 class="blue">3D Objects</h1>
+</head>
+<body>
+<a href="3D%20Objects.html">
+Go back
+</a>
+<br></br>
+  <!--Background Music-->
+  <audio width="400" height="220" autoplay loop>
+<source src="DarthRevanCut.mp3">
+Your browser does not support HTML 5 audio.
+</audio>
+  <!--Main Image-->
+	<center>
+<p class="blue">Revan's Helmets</p>
+</center>
+<p>
+   <center>
+		  <a href="RevanHelmet.png">
+      <img width="40%" src="RevanHelmet.png">
+      </a>
+<!--Page Break-->
+</center>
+</p>
+<center>
+<ol>
+	  <!--Example Image #1-->
+	<p class="navy">Darth Revan's mask from the Jedi Order</p>
+	 <a href="RevanHelmet.01.png">
+      <img width="10%" src="RevanHelmet.01.png">
+      </a>
+<!--Example Image #2-->
+	<p class="navy">Darth Revan's mask from the Mandolorian War</p>
+	 <a href="RevanHelmet.02.png">
+      <img width="10%" src="RevanHelmet.02.png">
+      </a>
+<!--Example Image #3-->
+	<p class="navy">Darth Revan's mask from the Jedi Civil War</p>
+	 <a href="RevanHelmet.03.png">
+      <img width="10%" src="RevanHelmet.03.png">
+      </a>
+</ol>
+<!--Page Break-->
+<br></br>
+<div id="border">
+<!--Trivia Questions-->
+<h2 class="blue">Trivia</h2>
+      <h3 class="red">What game first featured Darth Revan?</h3>
+  	<form>
+      <input type="radio" name="trivia" value="The Old Republic"> The Old Republic
+      <br></br>
+      <input type="radio" name="trivia" value="Force Unleashed"> Force Unleashed
+      <br></br>
+      <input type="radio" name="trivia" value="Knights of the Old Republic"> Knights of the Old Republic
+      <br></br>
+      <input type="radio" name="trivia" value="Republic Cammando"> Republic Cammando
+      <br></br>
+      <br>
+      <input type="button" value="Submit" size="200%" id="btn" onclick="run()"><br>
+      <div id="response"></div>
+    </form>
+  </body>
+  <script>	
+  function run(){
+  	var r = document.getElementsByName("trivia");
+  	var e = document.getElementById("response");
+  	for(var i=0; i <r.length; i++){
+  		if(r[i].checked == true && r[i].value == "Knights of the Old Republic"){
+  			e.innerHTML = "Well done!"
+  			return;
+  		}
+      else {
+        	e.innerHTML = "Try again!"
+        }
+  	}
+  }
+  </script>
+</div>
+<!--Other Posts-->
+<h2 class="blue">Other Projects</h2>
+<p class="blue">Padawan Quarters Sith Medalian</p>
+<a href="Padawan%20Quarters.png">
+	<img width="40%"src="Padawan%20Quarters.png">
+</a><a href="Sith%20Madalian.png">
+	<img width="40%"src="Sith%20Madalian.png">
+</a>
+<!--End Of Page-->
+<br></br>
+<br></br>
+<br></br>
+</center>
+</body>
+</html>
